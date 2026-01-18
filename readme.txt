@@ -43,6 +43,7 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
+Boostrap youtube tutorial: https://www.youtube.com/watch?v=-qfEOE4vtxE
 
 
 
