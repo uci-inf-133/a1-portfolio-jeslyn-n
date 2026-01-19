@@ -16,27 +16,111 @@ EMAIL: jeslynbn@uci.edu
 </head>
 
 <body>
-  <h1>Jeslyn Nguyen's Portfolio</h1>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <header>
+    <nav class="navbar sticky-top">
+      <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="work.html">WORK</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">JESLYNBN</a></li>
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="work.html">WORK</a></li>
+        <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+        <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <script src="script.js"></script>
+
+  <section class="home">
+    <div class="home-content">
+
+      <!-- <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="images/jeslyn.jpg" class="card-img-top" alt="Selfie of Jeslyn.">
+            </div>
+          </div>
+          <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Hi! I'm Jeslyn, an aspiring UI/UX designer and digital artist.</h5>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </section>
+
+  
   <div class="container-xl justify-content-center">
+    <p">My passions are...</p>
     <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-8">Project 1</div>
-      <div class="col-lg-4 col-md-8">Project 2</div>
-      <div class="col-lg-4 col-md-8">Project 3</div>
+      <div class="col-lg-4 col-md-4">Digital Art</div>
+      <div class="col-lg-4 col-md-4">UI/UX Design</div>
+      <div class="col-lg-4 col-md-4">Graphic Design</div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-8">Project 1</div>
-      <div class="col-lg-4 col-md-8">Project 2</div>
+      <div class="col-lg-4 col-md-6">Photography</div>
+      <div class="col-lg-4 col-md-6">Video Editing</div>
     </div>
   </div>
-  <button class="btn btn-primary">Contact me</button>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-  </script>
+
+  <h5>Featured Work</h5>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/proj1/pets-r-everything.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pets R Everything</h5>
+          <p class="card-text">App platform catered towards matching pet owners with their desired caretakers. This app allows users to create, book, and browse services.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">UI Design &#183; UX Design &#183; Research &#183; Prototyping</small>
+        </div>
+        <a href="#" class="stretched-link"></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/proj2/App-layout.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tracked</h5>
+          <p class="card-text">Map-based app catered towards riders for tracking purposes.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">UI Design &#183; UX Design</small>
+        </div>
+        <a href="#" class="stretched-link"></a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/proj3/baskets1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Amazon Desktop UI Study</h5>
+          <p class="card-text">In-depth study on the desktop UI of the Amazon shopping website, including features like navigation and product listings</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">UI Design &#183; Hi-fi &#183; Prototyping</small>
+        </div>
+        <a href="#" class="stretched-link"></a>
+      </div>
+    </div>
+  </div>
+
+  <h5>Want to see all of my projects?</h5>
+  <button class="btn btn-primary">All work</button>
+
+  <h5>"Please hire me"</h5>
+  <p>I'm highly motivated in developing my skills and growing as an artist and designer! I'm interested in mastering the craft of human-centered design by creating usable and memorable works.</p>
+  <button class="btn btn-primary">About me</button>
+
 </body>
 
 </html>
