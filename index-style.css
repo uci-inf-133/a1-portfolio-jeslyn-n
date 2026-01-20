@@ -1,7 +1,48 @@
-* {
+*, ::before,
+::after {
   margin:0;
   padding:0;
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
+  font-family:
+    'Google Sans',
+    /* Newer browsers */
+    system-ui,
+    /* Safari for OS X and iOS (San Francisco) */
+    -apple-system,
+    /* Chrome < 56 for OS X (San Francisco) */
+    BlinkMacSystemFont,
+    /* Windows */
+    'Segoe UI',
+    /* Android */
+    Roboto,
+    /* Basic web fallback */
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif,
+    /* Emoji fonts */
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+  font-size: 1em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  min-height:100vh;
+  min-height: 100dvh;
+  font-family: 'Google Sans', sans-serif;
 }
 
 header {
@@ -9,6 +50,23 @@ header {
   top:0;
   overflow:visible;
   z-index: 1000;
+  background-color: white;
+  margin:0; padding:0;
+  width:100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  white-space: nowrap;
 }
 
 .material-symbols-outlined {
@@ -19,32 +77,42 @@ header {
   'opsz' 24
 }
 
-body {
-  margin: 0;
-  min-height:100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+.container-nav {
+  max-width: min(96%, 1140px); 
+  margin: 0 auto;
+}
+
+.font-effect-neon{
+  font-size:1.25rem;
 }
 
 nav {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  
 }
 
 nav ul {
-  width: 100%;
+  display:flex;
   list-style: none;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin:0;
+  padding:0;
 }
 
 nav li {
-  height: 30px;
+  position: relative;
+  box-sizing: border-box;
+  pointer-events: auto;
+  font-size:1.25rem;
 }
 
 nav a {
   height: 100%;
-  padding: 0 30px;
+  padding: 3vh 3vh;
   text-decoration: none;
   display:block;
   align-items: center;
@@ -54,9 +122,11 @@ nav a {
 nav a:hover{
   background-color: #f0f0f0;
 }
+
 nav li:first-child{
-  margin-right: auto;
+  margin-left: 0;
 }
+
 .sidebar{
   position: fixed;
   top:0;
@@ -71,6 +141,7 @@ nav li:first-child{
   flex-direction: column;
   align-items:flex-start;
   justify-content: flex-start;
+  overflow-x: hidden;
 }
 .sidebar li{
   width:100%;
@@ -90,6 +161,42 @@ nav li:first-child{
   .sidebar{
     width:100%;
   }
+}
+
+.hero-content{
+  max-width: 100%;
+  padding: 0 5vh;
+  justify-content: center;
+  object-position: center;
+  overflow: hidden;
+}
+
+.card-img-home{
+    width: 100%;
+    height: 48vh;
+    object-position: center;
+    object-fit: cover;
+    margin-top: -4vh;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .card-img-home{height: 80vw;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-img-home {height: 34vw;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-img-home {height: 30vw;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card-img-home {height: 30vw;}
 }
 
 .col-lg-4{
