@@ -10,7 +10,7 @@ EMAIL: jeslynbn@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Jeslyn Nguyen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="index-style.css" rel="stylesheet">
+  <link href="contact-style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon">
@@ -23,7 +23,7 @@ EMAIL: jeslynbn@uci.edu
   <header>
     <div class="container-nav">
       <nav>
-        <h1 class="sr-only">Jeslyn's portfolio, home page</h1>
+        <p class="sr-only">Jeslyn's portfolio, home page</p>
         <a class="font-effect-neon" href="index.html">JESLYNBN</a>
         <ul class="sidebar">
           <li onclick="hideSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -44,11 +44,37 @@ EMAIL: jeslynbn@uci.edu
   <script src="script.js"></script>
 
   <section class="contact-page">
-    <p>CONTACT PAGE</p>
-    <h5>"Please hire me"</h5>
+    <p><a href="index.html" class="f-link">JESLYNBN</a> / CONTACT</p>
+    <h1>About me</h1>
     <p>I'm highly motivated in developing my skills and growing as an artist and designer! I'm interested in mastering the craft of human-centered design by creating usable and memorable works.</p>
-    <a href="contact.html" class="btn btn-primary">About me</a>
+  
+    <section class="form-section">
+      <h2>Let's get in touch!</h2>
+      <div class="mb-3">
+        <label for="FormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="FormControlTextarea1" class="form-label">Your message</label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+      </div>
+      <a href="contact.html" class="btn btn-primary disabled">Send</a>
+    </section>
   </section>
+
+  <footer class="footer-section">
+    <div class="footer-nav">
+      <nav>
+        <p class="sr-only">Jeslyn's portfolio, footer</p>
+        <a class="font-effect-neon" href="index.html">JESLYNBN</a>
+        <ul>
+          <li><a href="index.html"><img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a></li>
+          <li><a href="index.html"><img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/></a></li>
+        </ul>
+      </nav>
+    </div>
+    <p>Created © 2026 Jeslyn Nguyen</p>
+  </footer>
 
 </body>
 

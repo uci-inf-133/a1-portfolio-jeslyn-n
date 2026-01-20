@@ -167,80 +167,9 @@ nav li:first-child{
   background-image: linear-gradient(to bottom, #c2c1ff, white);
 }
 
-.hero-content{
-  max-width: 100%;
-  padding: 0 10vh;
-  justify-content: center;
-  object-position: center;
-  overflow: hidden;
-}
-
-.card-img-home{
-    width: 100%;
-    height: 48vh;
-    object-position: center;
-    object-fit: cover;
-    margin-top: -4vh;
-    background-color: transparent;
-}
-
 .card-body{
   background-color: transparent;
   text-align: center;
-}
-
-@media (min-width: 300px) {
-  .card-img-home{height: 54vw;}
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 600px) {
-  .card-img-home{height: 40vw;}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) {
-  .card-img-home {height: 38vw;}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-  .card-img-home {height: 40vw;}
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .card-img-home {height: 42vw;}
-}
-
-.col-lg-4{
-font-size:1rem;
-padding: 1rem;
-width: 100%;
-background-color: #2cb6eb;
-border: 1px solid white;
-box-shadow: -10px 0 10px rgba(255, 255, 255, 0.5);
-text-align: center;
-overflow: hidden;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .col-lg-4 {background: greenyellow;}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .col-lg-4 {background: cornflowerblue;}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .col-lg-4 {background: orange;}
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .col-lg-4 {background: pink;}
 }
 
 .card-img-top {
@@ -269,17 +198,7 @@ overflow: hidden;
   .card-img-top {height: 24vw;}
 }
 
-.passions-section{
-  background-image: linear-gradient(to top, #c2c1ff, white);
-  width:100%;
-  padding: 3vh 0vh;
-}
-
-.container-xl{
-  text-align: center;
-}
-
-.featured-work-cards{
+.project3-page{
   font-size:1rem;
   max-width: 100%;
   padding: 0 2vh;
@@ -296,20 +215,6 @@ overflow: hidden;
   margin-bottom:2vh;
 }
 
-.all-work-section{
-  justify-content: center;
-  text-align: center;
-  background-color: #c2c1ff;
-  padding: 5vh 0vh;
-}
-
-.abt-section{
-  justify-content: center;
-  text-align: center;
-  background-color: #caefff;
-  padding: 6vh 3vh;
-}
-
 .footer-section{
   justify-content: center;
   text-align: center;
@@ -324,5 +229,14 @@ overflow: hidden;
   max-width: min(96%, 1140px); 
   margin: 0 auto;
   justify-content: space-between; 
+}
+
+.f-link{
+  color: black;
+  text-decoration: none;
+}
+
+.f-link:hover {
+text-decoration: underline;
 }
 
